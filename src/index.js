@@ -2,13 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import lightReducer from './lightReducer';
+import CounterReducer from './CounterReducer';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux'
 import * as serviceWorker from './serviceWorker';
 
 const store = createStore(
-  lightReducer,
+  CounterReducer,
   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 );
 
